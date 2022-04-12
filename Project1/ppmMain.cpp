@@ -2,9 +2,7 @@
 
 #pragma region PPM文件输出说明
 //在对应.exe文件夹下使用cmd命令行，输入：\Debug>Project1.exe>Project1.ppm可以得到.ppm文件。
-#pragma endregion
-
-int main()
+void CreatePPMFile()
 {
 	//Image
 	const int image_width = 256;
@@ -26,5 +24,10 @@ int main()
 
 			std::cout << ir << ' ' << ig << ' ' << ib << '\n';
 		}
-	//return 0;
+}
+#pragma endregion
+
+int main()
+{
+	CreatePPMFile();
 }
